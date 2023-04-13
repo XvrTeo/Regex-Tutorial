@@ -1,6 +1,6 @@
 # Regex Tutorial for Phone Numbers
 
-Phone numbers come in various formats and can be challenging to extract or validate from a given text. Regular expressions (regex) are powerful tools for pattern matching and can be used to create a regex pattern that matches phone numbers. Here, we will explore a common regex pattern for matching phone numbers, explaining its various components such as anchors, quantifiers, character classes, flags, grouping and capturing, bracket expressions, greedy and lazy match, boundaries, back-references, look-ahead, and look-behind.
+Phone numbers come in various formats and can be challenging to extract or validate from a given text. Regular expressions (regex) are powerful tools for pattern matching and can be used to create a regex pattern that matches phone numbers. This tutorial will explore a common regex pattern for matching phone numbers, explaining its various components such as anchors, quantifiers, character classes, flags, grouping and capturing, bracket expressions, greedy and lazy match, boundaries, back-references, look-ahead, and look-behind.
 
 ## Summary
 
@@ -42,8 +42,10 @@ The regex pattern uses character classes such as ```\d``` to match any digit, an
 The regex pattern does not use any flags, which are optional settings that modify the behavior of the regex engine, such as case sensitivity or global matching.
 
 ### Grouping and Capturing
+The regex pattern uses parentheses ```()``` for grouping and capturing. This allows for capturing and extracting specific parts of the matched phone number. For example, ```(\d{3})``` captures the area code of the phone number for further processing.
 
 ### Bracket Expressions
+The regex pattern uses bracket expressions such as ```[-.]``` to define a set of characters to be matched. It allows for specifying a range of characters or individual characters that are acceptable at a particular position in the pattern.
 
 ### Greedy and Lazy Match
 
