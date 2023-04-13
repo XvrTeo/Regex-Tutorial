@@ -60,5 +60,8 @@ The regex pattern uses back-references, which refer to previously captured group
 ### Look-ahead and Look-behind
 The regex pattern does not use any look-ahead or look-behind assertions, which are used to specify conditions that must be met ahead or behind the current position in the text for a match to occur.
 
+## Conclusion
+In conclusion, the regex pattern provided is a comprehensive and flexible pattern for matching phone numbers in various formats. By understanding the different components of the pattern, including anchors, quantifiers, OR operators, character classes, flags, grouping and capturing, bracket expressions, greedy and lazy match, boundaries, back-references, look-ahead, and look-behind, you can effectively use this regex pattern for phone number validation or extraction tasks in your applications.
+
 ## Author
 Created by Xavier Teo. For additional questions and information, please go to my GitHub profile at https://github.com/XvrTeo or reach out via email at xvrteo@gmail.com.
