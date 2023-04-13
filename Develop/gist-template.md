@@ -46,4 +46,4 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Created by Xavier Teo. For additional questions and information, please go to my GitHub profile at https://github.com/XvrTeo or reach out via email at xvrteo@gmail.com.
