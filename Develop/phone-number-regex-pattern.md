@@ -13,14 +13,23 @@ This pattern is designed to match phone numbers that may be in various formats, 
 ### Breaking it down:
 
 ```^```: Represents the start of a line.
+
 ```(\+?\d{1,3}[-.])?```: Captures an optional country code, which can start with a "+" symbol, followed by 1 to 3 digits, and ending with a hyphen or period as a delimiter.
+
 ```\(?```: Optionally captures an opening parenthesis "(".
+
 ```(\d{3})```: Captures a group of three digits, representing the area code.
+
 ```\)?```: Optionally captures a closing parenthesis ")".
+
 ```[-.]?```: Optionally captures a hyphen or period as a delimiter.
+
 ```\d{3}```: Captures a group of three digits, representing the local exchange code.
+
 ```[-.]?```: Optionally captures a hyphen or period as a delimiter.
+
 ```\d{4}```: Captures a group of four digits, representing the subscriber number.
+
 ```$```: Represents the end of a line.
 
 ## Table of Contents
