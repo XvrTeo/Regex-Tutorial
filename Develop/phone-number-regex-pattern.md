@@ -38,13 +38,10 @@ This pattern is designed to match phone numbers that may be in various formats, 
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
 - [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 The regex pattern for matching phone numbers includes the following components:
@@ -61,9 +58,6 @@ The regex pattern uses the ```|``` symbol, which is the OR operator. It allows f
 ### Character Classes
 The regex pattern uses character classes such as ```\d``` to match any digit, and ```[-.]``` to match either a hyphen or a dot. Character classes are enclosed in square brackets ```[]``` and allow for matching a single character from a set of characters.
 
-### Flags
-N/A
-
 ### Grouping and Capturing
 The regex pattern uses parentheses ```()``` for grouping and capturing. This allows for capturing and extracting specific parts of the matched phone number. For example, ```(\d{3})``` captures the area code of the phone number for further processing.
 
@@ -73,14 +67,8 @@ The regex pattern uses bracket expressions such as ```[-.]``` to define a set of
 ### Greedy and Lazy Match
 The regex pattern uses greedy matching, which means it matches the longest possible string that satisfies the pattern. For example, ```\d{1,3}``` matches the longest possible sequence of one to three digits. However, the pattern can be modified to use lazy matching by adding a ```?``` after the quantifiers, such as ```\d{1,3}?```, which would make the matching as short as possible.
 
-### Boundaries
-N/A
-
 ### Back-references
 The regex pattern uses back-references, which refer to previously captured groups in the pattern. For example, ```(\d{3})``` captures the area code, and then ```\(?(\d{3})\)?``` uses a back-reference to refer to the captured area code again, allowing for matching phone numbers with or without parentheses around the area code.
-
-### Look-ahead and Look-behind
-N/A
 
 ## Conclusion
 In conclusion, the regex pattern provided is a comprehensive and flexible pattern for matching phone numbers in various formats. By understanding the different components of the pattern, you can effectively use this regex pattern for phone number validation or extraction tasks in your applications.
