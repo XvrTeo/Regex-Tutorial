@@ -27,14 +27,19 @@ This pattern is designed to match phone numbers that may be in various formats, 
 ## Regex Components
 
 ### Anchors
+The regex pattern starts with the ^ symbol, which is the caret anchor. It signifies the start of a line in the text, ensuring that the phone number pattern is matched at the beginning of the line.
 
 ### Quantifiers
+The regex pattern uses various quantifiers such as {1,3} and {3} to specify the number of occurrences of digits to match. For example, \d{1,3} indicates matching one to three digits, and \d{3} indicates matching exactly three digits.
 
 ### OR Operator
+The regex pattern uses the | symbol, which is the OR operator. It allows for multiple alternatives to be matched at a specific position in the pattern. For example, [-.] indicates matching either a hyphen or a dot.
 
 ### Character Classes
+The regex pattern uses character classes such as \d to match any digit, and [-.] to match either a hyphen or a dot. Character classes are enclosed in square brackets [] and allow for matching a single character from a set of characters.
 
 ### Flags
+The regex pattern does not use any flags, which are optional settings that modify the behavior of the regex engine, such as case sensitivity or global matching.
 
 ### Grouping and Capturing
 
