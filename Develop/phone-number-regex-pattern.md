@@ -25,6 +25,7 @@ This pattern is designed to match phone numbers that may be in various formats, 
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
+The regex pattern for matching phone numbers includes the following components:
 
 ### Anchors
 The regex pattern starts with the ```^``` symbol, which is the caret anchor. It signifies the start of a line in the text, ensuring that the phone number pattern is matched at the beginning of the line.
@@ -48,13 +49,16 @@ The regex pattern uses parentheses ```()``` for grouping and capturing. This all
 The regex pattern uses bracket expressions such as ```[-.]``` to define a set of characters to be matched. It allows for specifying a range of characters or individual characters that are acceptable at a particular position in the pattern.
 
 ### Greedy and Lazy Match
+The regex pattern uses greedy matching, which means it matches the longest possible string that satisfies the pattern. For example, ```\d{1,3}``` matches the longest possible sequence of one to three digits. However, the pattern can be modified to use lazy matching by adding a ```?``` after the quantifiers, such as ```\d{1,3}?```, which would make the matching as short as possible.
 
 ### Boundaries
+The regex pattern does not use any boundary assertions, which are used to specify the position of a match in relation to word boundaries, line boundaries, or other specific boundaries in the text.
 
 ### Back-references
+The regex pattern uses back-references, which refer to previously captured groups in the pattern. For example, ```(\d{3})``` captures the area code, and then ```\(?(\d{3})\)?``` uses a back-reference to refer to the captured area code again, allowing for matching phone numbers with or without parentheses around the area code.
 
 ### Look-ahead and Look-behind
+The regex pattern does not use any look-ahead or look-behind assertions, which are used to specify conditions that must be met ahead or behind the current position in the text for a match to occur.
 
 ## Author
-
 Created by Xavier Teo. For additional questions and information, please go to my GitHub profile at https://github.com/XvrTeo or reach out via email at xvrteo@gmail.com.
