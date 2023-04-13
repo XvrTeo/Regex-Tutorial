@@ -12,4 +12,4 @@ Starter code: https://github.com/coding-boot-camp/bug-free-goggles
 
 2. URL of the GitHub repository: https://github.com/XvrTeo/Regex-Tutorial
 
-3. GitHub gist in repo (for actual revision history): https://github.com/XvrTeo/Regex-Tutorial/blob/main/Develop/phone-number-regex-pattern.md
+3. Gist in GitHub repository (for actual revision history, if needed): https://github.com/XvrTeo/Regex-Tutorial/blob/main/Develop/phone-number-regex-pattern.md
